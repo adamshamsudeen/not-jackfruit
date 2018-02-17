@@ -32,11 +32,38 @@ Do you watch HBO's Silicon Valley? Because I do and I was inspired by Mr. Jian-Y
 
 "What would you say if I told you there is a app on the market that tell you if you have a jackfruit or not a jackfruit." - Sasi 
 
+# Step 1: Setting up
+
+## Usage
+
+#### Step #1 : Install virtualenv
+
+`pip install virtualenv`
+
+#### Step #2 : Create a virtualenv
+
+`virtualenv -p python vir`
+
+#### Step #3: Activate Virtualenv
+
+`source ./vir/bin/activate`
+
+#### Step #4 : Clone Repo
+
+* Clone the Repo. *(`cd` into the `dir` after extracing the `.zip`)*
+
+#### Step #5 : Install requirements
+
+* Install the Requirements.
+
+`pip install -r requirements.txt`
 
 
 
 
-# Step 1: Collecting data
+
+
+# Step 2: Collecting data
 The very first step in making a classifier is to collect data. Thus we need to find images of jackfruit and not-jackfruit. 
 
 
@@ -100,7 +127,7 @@ def main():
 
 Now just wait for it to download all of those jackfruits!!!
 
-# Step 2: Cleaning the data
+# Step 3: Cleaning the data
 At this point we have collected our data now we just need to clean it up a bit. If you take a look at the data you will probably notice that there are some garbage images that we need to remove, images that look like one of the following
 
 ![ToRemove1]
@@ -127,7 +154,7 @@ def removeInvalid(dirPaths):
 ```
  Next I made two folders called "jackfruit" and "not-jackfruit" and placed the 'food', 'furniture', 'pets', 'people' folders in the "not-jackfruit" foldder.
 
-# Step 3: Choosing the model.
+# Step 4: Choosing the model.
 The retrain script can retrain either Inception V3 model or a MobileNet. In this exercise, we will use a MobileNet. The principal difference is that Inception V3 is optimized for accuracy, while the MobileNets are optimized to be small and efficient, at the cost of some accuracy.
 
 Inception V3 has a first-choice accuracy of 78% on ImageNet, but is the model is 85MB, and requires many times more processing than even the largest MobileNet configuration, which achieves 70.5% accuracy, with just a 19MB download.
@@ -147,7 +174,7 @@ To start Tensorboard
 tensorboard --logdir tf_files/training_summaries &
 ```
 
-# Step 4: Train The Neural Net
+# Step 5: Train The Neural Net
 The model we choose is a mobileNet
 ```
 python -m scripts.retrain \
@@ -164,7 +191,7 @@ python -m scripts.retrain \
 
 The first retraining command iterates only 500 times. You can very likely get improved results (i.e. higher accuracy) by training for longer. To get this improvement, remove the parameter --how_many_training_steps to use the default 4,000 iterations.
 
-# Step 5: Using the retrained model
+# Step 6: Using the retrained model
 
 The retraining script writes data to the following two files:
 
@@ -173,7 +200,7 @@ tf_files/retrained_labels.txt, which is a text file containing labels
 
 To train the network we split our data into a tranining set and a test set
 
-# Step 6: The Results
+# Step 7: The Results
 To test the model on the test set we just do
 ```
 python -m scripts.label_image \
@@ -184,6 +211,6 @@ python -m scripts.label_image \
 
 We find that we get very good results.  This would make Jian-Yang proud.
 
-# Step 7: Profit
+# Step 8: Profit
 Now that we are done we can use this to detect the jackfruits around us.
 
