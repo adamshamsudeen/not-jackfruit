@@ -1,0 +1,21 @@
+images/
+vir/
+tensorflow-for-poets-2/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+tf_files/models/
+tf_files/training_summaries/
+
+tf_files/
