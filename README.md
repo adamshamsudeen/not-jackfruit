@@ -219,8 +219,12 @@ python -m scripts.label_image \
 
 ```
 
+<p align="center"> 
+<img src="https://github.com/adamshamsudeen/not-jackfruit/blob/master/git_images/output.png?raw=true">
+</p>
 We find that we get very good results.  This would make Jian-Yang proud.
 
 # Step 8: Profit
 Now that we are done we can use this to detect the jackfruits around us.
+
 
