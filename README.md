@@ -67,7 +67,7 @@ Now to actually download these images I need to get the URLs, to do that I just 
 then copy the URL of the page your on which will use in a script that we'll write to download all of these images.
 ![ImageNet2]
 
-Next we need to write our scripts to download and save all of these images, here is my [python code](https://github.com/kmather73/NotHotdog-Classifier/blob/master/getData.py) for saving the images. 
+Next we need to write our scripts to download and save all of these images, here is my [python code](https://github.com/adamshamsudeen/not-jackfruit/blob/master/images/get_images.py) for saving the images. 
 The function store_raw_images takes in a list of folders names where you want to save the images to from each of the links.
 ```
 def store_raw_images(folders, links):
