@@ -20,4 +20,4 @@ dist/
 tf_files/*
 !tf_files/models/
 !tf_files/retrained_graph.pb
-!tf_files/retrained_lables.txt
+!tf_files/retrained_labels.txt
