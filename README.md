@@ -1,17 +1,5 @@
 
 
-get all the images in the jack.txt
-```
-awk '{print "" $0;}' jack.txt | xargs -l1 wget
-```
-
-Delete all smaller files, unavailable images and junk
-```
-find . -name "*.jpg" -size -10k -delete
-```
-
-
-https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.md
 
 
 [//]: # (Image References)
@@ -28,8 +16,11 @@ https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1
 
 # NotJackFruit-Classifier
 Do you watch HBO's Silicon Valley? Because I do and I was inspired by Mr. Jian-Yang to make my own not hotdog classifier. But this is different, its the Indian version, not jackfruit?
-![jackfruit]
 
+
+<p align="center">
+ ![jackfruit]
+</p>
 "What would you say if I told you there is a app on the market that tell you if you have a jackfruit or not a jackfruit." - Sasi 
 
 # Step 1: Setting up
@@ -125,6 +116,22 @@ def main():
     store_raw_images(paths, links)
 ```
 
+
+## You can also use shell script:
+
+Save all the liks to jack.txt and the script to download it
+
+```
+awk '{print "" $0;}' jack.txt | xargs -l1 wget
+```
+
+Delete all smaller files, unavailable images and junk files
+```
+find . -name "*.jpg" -size -10k -delete
+```
+
+
+
 Now just wait for it to download all of those jackfruits!!!
 
 # Step 3: Cleaning the data
@@ -168,6 +175,9 @@ With the recommended settings, it typically takes only a couple of minutes to re
 IMAGE_SIZE=224
 ARCHITECTURE="mobilenet_0.50_${IMAGE_SIZE}"
  ```   
+
+Other models: https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.md
+
 To start Tensorboard
 
 ```

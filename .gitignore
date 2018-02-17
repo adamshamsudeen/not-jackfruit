@@ -15,7 +15,6 @@ __pycache__/
 build/
 develop-eggs/
 dist/
-tf_files/models/
-tf_files/training_summaries/
 
-tf_files/
+
+tf_files/*
