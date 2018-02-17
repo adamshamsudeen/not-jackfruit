@@ -1,4 +1,5 @@
-images/
+images/jackfruit/*.jpg
+images/not-jackfruit/*.jpg
 vir/
 tensorflow-for-poets-2/
 
