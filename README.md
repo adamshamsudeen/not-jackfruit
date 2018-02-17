@@ -17,10 +17,10 @@
 # NotJackFruit-Classifier
 Do you watch HBO's Silicon Valley? Because I do and I was inspired by Mr. Jian-Yang to make my own not hotdog classifier. But this is different, its the Indian version, not jackfruit?
 
-
-<p align="center">
- ![jackfruit]
+<p align="center"> 
+<img src="https://github.com/adamshamsudeen/not-jackfruit/blob/master/git_images/jackfruit.jpg?raw=true">
 </p>
+
 "What would you say if I told you there is a app on the market that tell you if you have a jackfruit or not a jackfruit." - Sasi 
 
 # Step 1: Setting up
