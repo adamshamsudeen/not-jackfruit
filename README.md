@@ -33,7 +33,7 @@ Do you watch HBO's Silicon Valley? Because I do and I was inspired by Mr. Jian-Y
 
 #### Step #2 : Create a virtualenv
 
-`virtualenv -p python vir`
+`virtualenv -p python3 vir`
 
 #### Step #3: Activate Virtualenv
 
