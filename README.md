@@ -50,7 +50,7 @@ Do you watch HBO's Silicon Valley? Because I do and I was inspired by Mr. Jian-Y
 `pip install -r requirements.txt`
 
 
-
+### If you just need to use the model without training, I have added a pretrained model. Go to step 7.
 
 
 
@@ -211,7 +211,8 @@ tf_files/retrained_labels.txt, which is a text file containing labels
 To train the network we split our data into a tranining set and a test set
 
 # Step 7: The Results
-To test the model on the test set we just do
+I have added a pretrined model, just use the below code without training. Dont forget to set the architecture from step 4.
+
 ```
 python -m scripts.label_image \
     --graph=tf_files/retrained_graph.pb  \
