@@ -17,7 +17,7 @@ build/
 develop-eggs/
 dist/
 
-tf_files/
+tf_files/*
 !tf_files/models/
 !tf_files/retrained_graph.pb
 !tf_files/retrained_lables.txt
