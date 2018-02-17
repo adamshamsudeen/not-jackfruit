@@ -225,7 +225,7 @@ python -m scripts.label_image \
 </p>
 We find that we get very good results.  This would make Jian-Yang proud.
 
-# Step 8: Profit
-Now that we are done we can use this to detect the jackfruits around us.
+# Step 8: LICENSE
+MIT
 
 
